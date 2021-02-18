@@ -19,10 +19,10 @@ jobs:
       with:
         node-version: 12.x
     - run: npm ci
-    - run: git config --global user.email "email@email.com"
-    - run: git config --global user.name "Sky Chang"
+    - run: git config --global user.email "steven95421@gmail.com"
+    - run: git config --global user.name "steven95421"
     - shell: bash
       env:
-        GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        GH_TOKEN: ${{ secrets.NODE_JS }}
       run: |
         npm run deploy
