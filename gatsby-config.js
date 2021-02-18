@@ -43,13 +43,11 @@ module.exports = {
         description: 'Machine Learning and Data Analytics Intern, April 2020— August 2020',
         link: 'https://www.dell.com/',
       },
-      ,
       {
         name: 'Institute of Information Science, Academia Sinica',
         description: 'Research Intern, July 2019 — August 2019',
         link: 'https://www.iis.sinica.edu.tw/en/index.html',
       },
-      ,
       {
         name: 'Industrial Technology Research Institute',
         description: 'Research Intern, July 2018 — December 2018',
