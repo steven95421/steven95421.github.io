@@ -24,35 +24,36 @@ module.exports = {
           'A zero-config and blazing fast personal site + blog built with GatsbyJs and TailwindCSS',
         link: 'https://github.com/RyanFitzgerald/devfolio',
       },
-      {
-        name: 'ChromeExtensionKit',
-        description:
-          'Kit to jump-start your Chrome extension projects with a variety of battle-tested starter templates',
-        link: 'https://chromeextensionkit.com/?ref=devfolio',
-      },
-      {
-        name: 'Another Cool Project',
-        description:
-          'Lorem ipsum dolor sit amet consectetur adipisicing elit ducimus perferendis',
-        link: 'https://github.com/RyanFitzgerald/devfolio',
-      },
+      
     ],
     // Optional: List your experience, they must have `name` and `description`. `link` is optional.
     experience: [
       {
-        name: 'Acme Corp',
-        description: 'Full-Stack Developer, February 2020 - Present',
-        link: 'https://github.com/RyanFitzgerald/devfolio',
+        name: 'Appier',
+        description: 'Machine Learning Scientist Intern, September 2020— Current',
+        link: 'https://www.appier.com/',
       },
       {
-        name: 'Globex Corp',
-        description: 'Full-Stack Developer, December 2017 - February 2020',
-        link: 'https://github.com/RyanFitzgerald/devfolio',
+        name: 'Microsoft',
+        description: 'Software Engineer Intern, July 2020— Current',
+        link: 'https://blogs.bing.com/maps',
       },
       {
-        name: 'Hooli',
-        description: 'Full-Stack Developer, May 2015 - December 2017',
-        link: 'https://github.com/RyanFitzgerald/devfolio',
+        name: 'Dell',
+        description: 'Machine Learning and Data Analytics Intern, April 2020— August 2020',
+        link: 'https://www.dell.com/',
+      },
+      ,
+      {
+        name: 'Institute of Information Science, Academia Sinica',
+        description: 'Research Intern, July 2019 — August 2019',
+        link: 'https://www.iis.sinica.edu.tw/en/index.html',
+      },
+      ,
+      {
+        name: 'Industrial Technology Research Institute',
+        description: 'Research Intern, July 2018 — December 2018',
+        link: 'https://www.itri.org.tw/english/',
       },
     ],
     // Optional: List your skills, they must have `name` and `description`.
