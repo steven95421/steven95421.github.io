@@ -19,6 +19,8 @@
     --rule: #e7e5e4;
     --accent: #1d4ed8;
     --card: #ffffff;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --mono: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, monospace;
   }
   @media (prefers-color-scheme: dark) {
     :root {
@@ -31,19 +33,20 @@
       --card: #1a1a1d;
     }
   }
+
+  /* base */
   * { margin: 0; padding: 0; box-sizing: border-box; }
   html { scroll-behavior: smooth; }
   body {
     background: var(--bg);
     color: var(--ink);
-    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font: 16px/1.65 var(--sans);
     -webkit-font-smoothing: antialiased;
     padding: 0 1.5rem;
   }
   main { max-width: 44rem; margin: 0 auto; padding: 5.5rem 0 3rem; }
   a { color: var(--accent); text-decoration: none; }
   a:hover { text-decoration: underline; text-underline-offset: 3px; }
-  .mono { font-family: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, monospace; }
 
   /* hero */
   h1 { font-size: 2.1rem; font-weight: 750; letter-spacing: -0.02em; line-height: 1.2; }
@@ -63,7 +66,7 @@
   /* sections */
   section { margin-top: 3.2rem; }
   h2 {
-    font-family: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, monospace;
+    font-family: var(--mono);
     font-size: .78rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase;
     color: var(--faint);
     display: flex; align-items: center; gap: .9rem;
@@ -72,9 +75,8 @@
   h2::after { content: ""; flex: 1; height: 1px; background: var(--rule); }
   h2 .asof { order: 1; letter-spacing: normal; text-transform: none; font-weight: 400; }
   .prose p + p { margin-top: .8rem; }
-  .prose { color: var(--ink); }
 
-  /* rows (experience / projects) */
+  /* rows (now / experience / projects / competitions / education) */
   .row { display: flex; gap: 1.2rem; align-items: baseline; padding: .72rem 0; }
   .row + .row { border-top: 1px solid var(--rule); }
   .row .body { flex: 1; min-width: 0; }
@@ -84,30 +86,25 @@
   .row .role { color: var(--muted); font-size: .93rem; margin-top: .1rem; }
   .row .desc { color: var(--muted); font-size: .93rem; margin-top: .28rem; }
   .row .date {
-    font-family: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, monospace;
+    font-family: var(--mono);
     font-size: .78rem; color: var(--faint); white-space: nowrap; text-align: right;
   }
-  .star {
-    font-size: .75rem; color: var(--faint);
-    font-family: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, monospace;
-    margin-left: .45rem;
-  }
+  .star { font-family: var(--mono); font-size: .75rem; color: var(--faint); margin-left: .45rem; }
   .wip {
-    font-size: .7rem; font-weight: 600; letter-spacing: .05em;
+    font-family: var(--mono); font-size: .7rem; font-weight: 600; letter-spacing: .05em;
     color: var(--faint); border: 1px solid var(--rule); border-radius: 4px;
     padding: .05rem .35rem; margin-left: .45rem; vertical-align: 1px;
-    font-family: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, monospace;
   }
 
   /* skills */
   .skills { display: grid; grid-template-columns: max-content 1fr; gap: .55rem 1.4rem; font-size: .93rem; }
   .skills dt {
-    color: var(--faint); font-family: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, monospace;
+    color: var(--faint); font-family: var(--mono);
     font-size: .78rem; padding-top: .12rem; white-space: nowrap;
   }
   .skills dd { color: var(--muted); }
-  .skills dd b { color: var(--ink); font-weight: 550; }
 
+  /* footer */
   footer {
     margin-top: 4rem; padding-top: 1.2rem; border-top: 1px solid var(--rule);
     font-size: .8rem; color: var(--faint);
